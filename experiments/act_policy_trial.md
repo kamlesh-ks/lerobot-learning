@@ -24,7 +24,8 @@ lerobot-train \
 ## Evaluate
 
 lerobot-eval \
-  --policy.path=outputs/train/act_aloha_sim_transfer_cube_human/checkpoints/000100/pretrained_model \
+  --policy.path=outputs/train/act_aloha_sim_transfer_cube_human/checkpoints/100000/pretrained_model \
   --env.type=aloha \
+  --env.task=AlohaTransferCube-v0 \
   --eval.n_episodes=50 \
   --eval.batch_size=1
