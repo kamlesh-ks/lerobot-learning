@@ -13,6 +13,14 @@ lerobot-train \
   --policy.repo_id=${HF_USER}/act_aloha_sim_transfer_cube_human \
   --policy.push_to_hub=false
 
+### Resume
+
+lerobot-train \
+  --config_path=/home/kks/lr/lerobot-learning/outputs/train/act_aloha_sim_transfer_cube_human/checkpoints/001000/pretrained_model/train_config.json \
+  --resume=true \
+  --steps=10000 \
+  --policy.push_to_hub=false
+
 ## Evaluate
 
 lerobot-eval \
