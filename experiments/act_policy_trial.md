@@ -29,3 +29,6 @@ lerobot-eval \
   --env.task=AlohaTransferCube-v0 \
   --eval.n_episodes=50 \
   --eval.batch_size=1
+
+## Push to hub
+hf upload KKSingh-IN/act_aloha_sim_transfer_cube_human /home/kks/lr/lerobot-learning/outputs/train/act_aloha_sim_transfer_cube_human/checkpoints/150000/pretrained_model .
